@@ -73,6 +73,32 @@
         }
 
  }
+
+ function  view_usersurveys($uid)
+  {
+
+    // user survey display script
+
+   db_connect();
+
+    $result = mysql_query("SELECT * FROM user_survey  WHERE uid=$uid ;");
+
+    $snumber=mysql_num_rows($result);
+    if($snumber >0)
+    {
+
+
+
+    }
+    else
+    {
+
+
+
+    }
+
+
+ }
   
  
 ?>
