@@ -17,6 +17,36 @@
       mysql_select_db("rewards_db", $con);
 
  }
+
+ function  user_login($username, $password)
+  {
+
+
+   db_connect();
+
+    $result = mysql_query("SELECT * FROM users  WHERE username=\"$username\" AND pwd= \"$password\";");
+
+
+
+    if (mysql_num_rows($result) > 0) 
+        {
+
+
+          return 1;
+
+
+        }
+        else
+        {
+
+          return 0;
+
+
+        }
+
+  
+
+ }
   
  
 ?>
