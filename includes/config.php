@@ -1,7 +1,7 @@
 <?php
  
 /*
- * This is the php script for all connections to the database
+ * This is the php script for all connections to the database and all functions that need to talk to the db
  * 
  */
  
@@ -21,6 +21,7 @@
  function  user_login($username, $password)
   {
 
+    // user login script
 
    db_connect();
 
@@ -41,10 +42,35 @@
 
           return 0;
 
-
         }
 
   
+
+ }
+
+  function  user_add($full_names, $username, $email, $phone_number, $p_id, $pwd)
+  {
+
+   // a method to add users to the database reward_db
+   db_connect();
+
+    $result = mysql_query("INSERT into user (full_names,username,email,phone_number,p_id,pwd) values('$full_names','$username', '$email', '$phone_number', $p_id, '$pwd');");
+
+
+
+    if ($result) 
+        {
+
+
+          return 1;
+
+        }
+        else
+        {
+
+          return 0;
+
+        }
 
  }
   
