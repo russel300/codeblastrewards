@@ -14,7 +14,7 @@
       {
           die('Could not connect: ' . mysql_error());
       }
-      mysql_select_db("rewards", $con);
+      mysql_select_db("rewards_db", $con);
 
  }
   
