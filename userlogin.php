@@ -1,39 +1,34 @@
 <?php include "includes/header.php" ?>
-<div class="card">
-    <div class="card-block">
-
-        <!--Header-->
-        <div class="form-header  purple darken-4">
-            <h3><i class="fa fa-lock"></i> Login:</h3>
-        </div>
-
-        <!--Body-->
-        <div class="md-form">
-            <i class="fa fa-envelope prefix"></i>
-            <input type="text" id="form2" class="form-control">
-            <label for="form2">Your email</label>
-        </div>
-
-        <div class="md-form">
-            <i class="fa fa-lock prefix"></i>
-            <input type="password" id="form4" class="form-control">
-            <label for="form4">Your password</label>
-        </div>
-
-        <div class="text-center">
-            <button class="btn btn-deep-purple">Login</button>
-        </div>
-
-    </div>
-
-    <!--Footer-->
-    <div class="modal-footer">
-        <div class="options">
-            <p>Not a member? <a href="#">Sign Up</a></p>
-            <p>Forgot <a href="#">Password?</a></p>
+<div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Please Sign In</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="remember" type="checkbox" value="Remember Me">Remember Me
+                                    </label>
+                                </div>
+                                <!-- Change this to a button or input when using this as a form -->
+                                <a href="index.html" class="btn btn-lg btn-success btn-block">Login</a>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-</div>
 <?php include "includes/footer.php" ?>
 <!--/Form with header-->
