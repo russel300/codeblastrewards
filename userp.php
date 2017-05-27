@@ -109,58 +109,7 @@
                         <h5>Available Surveys</h5>
                           
                            <?php
-                          
-                          db_connect();
-
-                          
-
-
-                          $res=mysql_query("select * from survey");
-
-                          while($r=mysql_fetch_array($res))
-                          {
-
-                            $surveyid=$r['survey_id'];
-                            $user=$_SESSION['uname'];
-
-                            $attmpt=mysql_query("SELECT  * FROM `user_survey` WHERE survey_id=$surveyid and uid=$user");
-
-                            $num=0;
-                            while($row_attmpt=mysql_fetch_array($attmpt))
-                            {
-
-                            $num++;
-                            }
-
-                                
-                            $sname=$r["survey_name"];
-
-                            if($num >=1)
-                            {
-
-                                echo'
-                           <div class="alert alert-success"><h5> '.$r["survey_name"].'- '.$r["points"].'&nbsp;Points</h5> &nbsp;&nbsp;<b></b><a href="#" class="alert-link" >Disabled(already Taken)</a>.
-                            </div>
-
-                            ';
-
-                            }
-                            else
-                            {
-
-                                echo'
-                           <div class="alert alert-success"><h5> '.$r["survey_name"].'- '.$r["points"].'&nbsp;Points</h5> &nbsp;&nbsp;<b></b><a href="'.$r["survey_url"].'?sid='.$sname.'" class="alert-link" >Click Here</a>.
-                            </div>
-
-                            ';
-
-                            }
-                            
-                          }
-
-
-                      
-
+                          available_surveys();
 
 
                            ?>
