@@ -9,7 +9,7 @@
   echo '<script>window.location.href = "userlogin.php";</script>';
       }
 
- $ps=view_pints(1);
+ $ps=view_points(1);
 ?>
 <body>
 
