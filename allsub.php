@@ -28,8 +28,7 @@
                                         <th>User Name</th>
                                         <th>Survey Name</th>
                                         <th>Date Submitted</th>
-                                        <th>Points</th>
-                                       
+                                        <th>Points</th>                                     
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -43,7 +42,6 @@
                                 $sname=$r["survey_name"];
                                 $sdate=$r["datentime"];
                                 $points=$r["points"];
-
                                 echo '
                                 
                                  <tr class="odd gradeX">
