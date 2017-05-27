@@ -2,6 +2,7 @@
       include "includes/config.php";
     getsession(); 
  $ps=view_points(1);
+ $nums=num_surveys();
 ?>
 <body>
 
@@ -48,7 +49,7 @@
                                     <i class="fa fa-certificate fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">2</div>
+                                    <div class="huge"><?php echo $nums;  ?></div>
                                     <div>New SURVEYS!</div>
                                 </div>
                             </div>

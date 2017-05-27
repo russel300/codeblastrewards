@@ -169,17 +169,22 @@ $result = mysql_query("INSERT into user_survey (uid, survey_id, points) values($
        
        db_connect();
         $res=mysql_query("select * from survey");
+        $num=0;
+        $snew=0;
+        $taken=0;
+
         while($r=mysql_fetch_array($res))
         {
 
         $surveyid=$r['survey_id'];
         $user=$_SESSION['uname'];
 
+         $snew++;
+
+         $num=0;
         $attmpt=mysql_query("SELECT  * FROM `user_survey` WHERE survey_id=$surveyid and uid=$user");
 
-        $num=0;
-        $snew=0;
-        while($row_attmpt=mysql_fetch_array($attmpt))
+           while($row_attmpt=mysql_fetch_array($attmpt))
         {
 
         $num++;
@@ -187,15 +192,17 @@ $result = mysql_query("INSERT into user_survey (uid, survey_id, points) values($
         
         if($num >=1)
         {
-
+       $taken++;
 
         }
         else
         {
-
+      
         }
 
         }
+
+        return $snew-$taken;
  }
 
 
