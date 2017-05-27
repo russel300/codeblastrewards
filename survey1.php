@@ -1,4 +1,28 @@
-<?php include "includes/header.php" ?>
+<?php include "includes/header.php"; 
+      include "includes/config.php";
+    $sname=$_GET["sid"];
+
+    if($_POST)
+    {
+
+    $sub=submit_response(1,10,1);
+    if($sub==1)
+    {
+
+   $msg="sucessful";
+    echo $msg;
+    }
+    else
+    {
+
+     $msg="not sucessful";
+      echo $msg;
+    }
+
+   
+
+    }
+?>
 <body>
 
 	<div class="container">
@@ -6,85 +30,9 @@
 			<div class="col-md-6 col-md-offset-4">
 				<div class="login-panel panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">Welcome User</h3>
+						<h3 class="panel-title">Welcome To <?php echo $sname;  ?> Survey</h3>
 					</div>
-					<div class="panel-body">
-						<div class="row">
-							<div class="col-lg-3 col-md-6">
-								<div class="panel panel-primary">
-									<div class="panel-heading">
-										<div class="row">
-											<div class="col-xs-3">
-												<i class="fa fa-comments fa-5x"></i>
-											</div>
-											<div class="col-xs-9 text-right">
-												<div class="huge">26</div>
-												<div>POINTS</div>
-											</div>
-										</div>
-									</div>
-									<a href="#">
-										<div class="panel-footer">
-											<span class="pull-left">View Points</span>
-											<span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-											<div class="clearfix"></div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-6">
-								<div class="panel panel-green">
-									<div class="panel-heading">
-										<div class="row">
-											<div class="col-xs-3">
-												<i class="fa fa-certificate fa-5x"></i>
-											</div>
-											<div class="col-xs-9 text-right">
-												<div class="huge">2</div>
-												<div>New SURVEYS!</div>
-											</div>
-										</div>
-									</div>
-									<a href="#">
-										<div class="panel-footer">
-											<span class="pull-left">View Profile</span>
-											<span class="pull-right"><i class="fa fa-user"></i></span>
-											<div class="clearfix"></div>
-										</div>
-									</a>
-								</div>
-							</div>
-						
-							<div class="col-lg-3 col-md-6">
-								<div class="panel panel-red">
-									<div class="panel-heading">
-										<div class="row">
-											<div class="col-xs-3">
-												<i class="fa fa-user fa-5x"></i>
-											</div>
-											<div class="col-xs-9 text-right">
-											</div>
-										</div>
-									</div>
-									<a href="#">
-										<div class="panel-footer">
-											<span class="pull-left">Back </span>
-											<span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-											<div class="clearfix"></div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-						<!-- /.row -->
-						<!-- /.panel-heading -->
-						<!-- /.panel-heading -->
-
-						<!-- .panel-body -->
-					</div>
-
-					<!-- /.panel -->
-				</div>
+					
 			</div>
 		</div>
 
@@ -94,25 +42,21 @@
 			<div class="col-md-6 col-md-offset-4">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						Basic Form Elements
+						Kindly Fill the Questions below
 					</div>
 					<div class="panel-body">
 						<div class="row">
 							<div class="col-lg-12">
-								<form role="form">
+								<form role="form" method="POST">
 									<div class="form-group">
-										<p class="question-title" style="font-size: 12px; color: #424242; font-weight: bold; margin-top: 50px;">Considering only your most recent purchase experience, how likely would you be to recommend the purchase of an Apple iPad to a friend or colleague? (0 is not at all likely, 10 is extremely likely)</p>
-										<p class="question-choices" style="font-size: 12px; color: #424242; font-weight: bold;"><input type="radio" /> Not at All Likely (0)<br />
-											<input type="radio" /> (1)<br />
-											<input type="radio" /> (2)<br />
-											<input type="radio" /> (3)<br />
-											<input type="radio" /> (4)<br />
-											<input type="radio" /> (5)<br />
-											<input type="radio" /> (6)<br />
-											<input type="radio" /> (7)<br />
-											<input type="radio" /> (8)<br />
-											<input type="radio" /> (9)<br />
-											<input type="radio" /> Extremely Likely (10)</p>
+										<p class="question-title" style="font-size: 12px; color: #424242; font-weight: bold; margin-top: 50px;">How often do you buy airtime a day</p>
+										<p class="question-choices" style="font-size: 12px; color: #424242; font-weight: bold;">
+											<input type="radio" /> Once<br />
+											<input type="radio" /> Twice<br />
+											<input type="radio" /> three Times<br />
+											<input type="radio" /> not at all<br />
+											
+											</p>
 										<p class="question-title" style="font-size: 12px; color: #424242; font-weight: bold; margin-top: 50px;">Considering your complete experience with our company, how likely would you be to recommend our company to a friend or colleague? (0 is not at all likely, 10 is extremely likely)</p>
 										<p class="question-choices" style="font-size: 12px; color: #424242; font-weight: bold;"><input type="radio" /> Not at All Likely (0)<br />
 											<input type="radio" /> (1)<br />
@@ -157,7 +101,7 @@
 
 								</div>
 								<br>
-								<button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+								<button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
                             </p>
 							</form>
 						</div>

@@ -21,10 +21,13 @@
                                 <div class="col-xs-3">
                                     <i class="fa fa-comments fa-5x"></i>
                                 </div>
+
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">26</div>
                                     <div>POINTS</div>
                                 </div>
+
+
                             </div>
                         </div>
                         <a href="#">
@@ -113,9 +116,11 @@
                           while($r=mysql_fetch_array($res))
                           {
 
+                            $sname=$r["survey_name"];
+
                             echo'
 
-                           <div class="alert alert-success">'.$r["survey_name"].' <a href="'.$r["survey_url"].'" class="alert-link">Click Here</a>.
+                           <div class="alert alert-success">'.$r["survey_name"].' <a href="'.$r["survey_url"].'?sid='.$sname.'" class="alert-link">Click Here</a>.
                             </div>
 
                             ';

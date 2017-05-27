@@ -9,8 +9,10 @@ $password=$_POST["password"];
 
 $login=user_login($email,$password);
 
-if($login==1)
+if($login>=1)
 {
+
+$_session["uname"]=$login;
 
 echo '<script>window.location.href = "userp.php";</script>';
 

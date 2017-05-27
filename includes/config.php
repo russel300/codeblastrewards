@@ -34,7 +34,8 @@
     if (mysql_num_rows($result) > 0) 
         {
 
-
+       // $r=mysql_fetch_row($result);
+         
           return 1;
 
 
@@ -76,6 +77,32 @@
 
  }
 
+ function  submit_response($uid, $points, $survey_id)
+  {
+
+   // a method to add users to the database reward_db
+   db_connect();
+
+$result = mysql_query("INSERT into user_survey (uid, survey_id, points) values($uid,$survey_id, $points)");
+
+
+
+    if ($result) 
+        {
+
+
+          return 1;
+
+        }
+        else
+        {
+
+          return 0;
+
+        }
+ }
+
+
  function  view_usersurveys($uid)
   {
 
@@ -100,6 +127,8 @@
 
 
  }
+
+
   
  
 ?>
