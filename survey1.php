@@ -1,20 +1,16 @@
 <?php include "includes/header.php"; 
       include "includes/config.php";
     $sname=$_GET["sid"];
-
     if($_POST)
     {
-
     $sub=submit_response(1,10,1);
     if($sub==1)
     {
-
    $msg="sucessful";
     echo $msg;
     }
     else
     {
-
      $msg="not sucessful";
       echo $msg;
     }

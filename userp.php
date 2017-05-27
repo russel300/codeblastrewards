@@ -1,8 +1,6 @@
 <?php include "includes/header.php"; 
       include "includes/config.php";
-
     getsession(); 
-
  $ps=view_points(1);
 ?>
 <body>

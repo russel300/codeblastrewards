@@ -32,19 +32,13 @@
 
 
     if (mysql_num_rows($result) > 0) 
-        {
-
-       // $r=mysql_fetch_row($result);
-         
+        {   
           return 1;
-
 
         }
         else
         {
-
           return 0;
-
         }
 
   
@@ -160,7 +154,7 @@ $result = mysql_query("INSERT into user_survey (uid, survey_id, points) values($
 
  function getsession()
  {
-  
+
  if(isset($_SESSION['uname'])){
     
 }else{
