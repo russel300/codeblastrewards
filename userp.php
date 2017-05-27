@@ -1,7 +1,15 @@
 <?php include "includes/header.php"; 
       include "includes/config.php";
 
+      $uname=$_session["uname"];
 
+      if($uname="")
+      {
+
+  echo '<script>window.location.href = "userlogin.php";</script>';
+      }
+
+ $ps=view_pints(1);
 ?>
 <body>
 
@@ -23,7 +31,7 @@
                                 </div>
 
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">26</div>
+                                    <div class="huge"><?php echo $ps;  ?></div>
                                     <div>POINTS</div>
                                 </div>
 
@@ -39,8 +47,71 @@
                         </a>
                     </div>
                 </div>
+<<<<<<< HEAD
                 
                 
+=======
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-green">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-certificate fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">2</div>
+                                    <div>New SURVEYS!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Profile</span>
+                                <span class="pull-right"><i class="fa fa-user"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-yellow">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-wrench fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">Edit Profile</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-red">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-user fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                </div>
+                            </div>
+                        </div>
+                        <a href="userlogin.php?lg=1">
+                            <div class="panel-footer">
+                                <span class="pull-left">Logout</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+>>>>>>> origin/master
                     </div>
                 </div>
             </div>
