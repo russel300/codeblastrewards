@@ -47,10 +47,7 @@
                         </a>
                     </div>
                 </div>
-<<<<<<< HEAD
-                
-                
-=======
+
                 <div class="col-lg-3 col-md-6">
                     <div class="panel panel-green">
                         <div class="panel-heading">
@@ -111,7 +108,7 @@
                                 <div class="clearfix"></div>
                             </div>
                         </a>
->>>>>>> origin/master
+
                     </div>
                 </div>
             </div>
