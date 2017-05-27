@@ -1,4 +1,11 @@
-<?php  session_start();    ?>
+<?php 
+if(isset($_SESSION['uname'])){
+    session_start();
+}else{
+    header('location:userlogin.php');
+}
+
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
