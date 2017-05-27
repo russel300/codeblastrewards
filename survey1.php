@@ -117,7 +117,7 @@
 					</div>
 					<div class="panel-body">
 						<div class="row">
-							<div class="col-lg-3">
+							<div class="col-lg-12">
 								<form role="form">
 									<div class="form-group">
 										<p class="question-title" style="font-size: 12px; color: #424242; font-weight: bold; margin-top: 50px;">Considering only your most recent purchase experience, how likely would you be to recommend the purchase of an Apple iPad to a friend or colleague? (0 is not at all likely, 10 is extremely likely)</p>
