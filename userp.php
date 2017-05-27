@@ -123,22 +123,43 @@
                             $surveyid=$r['survey_id'];
                             $user=$_SESSION['uname'];
 
-                            $attmpt=mysql_query("SELECT  * FROM `user_survey` WHERE survey_id='$surveyid' and `uid`='$user'");
+                            $attmpt=mysql_query("SELECT  * FROM `user_survey` WHERE survey_id=$surveyid and uid=$user");
 
+                            $num=0;
+                            while($row_attmpt=mysql_fetch_array($attmpt))
+                            {
 
-                            $row_attmpt=mysql_fetch_array($attmpt);
+                            $num++;
+                            }
 
                                 
                             $sname=$r["survey_name"];
-                            echo'
-                           <div class="alert alert-success"><h5> '.$r["survey_name"].'- '.$r["points"].'&nbsp;Points</h5> &nbsp;&nbsp;<b></b><a href="'.$r["survey_url"].'?sid='.$sname.'" class="alert-link"'.if(!is_null($row_attmpt)){.'  disabled'.}.' >Click Here</a>.
+
+                            if($num >=1)
+                            {
+
+                                echo'
+                           <div class="alert alert-success"><h5> '.$r["survey_name"].'- '.$r["points"].'&nbsp;Points</h5> &nbsp;&nbsp;<b></b><a href="#" class="alert-link" >Disabled(already Taken)</a>.
                             </div>
 
                             ';
+
+                            }
+                            else
+                            {
+
+                                echo'
+                           <div class="alert alert-success"><h5> '.$r["survey_name"].'- '.$r["points"].'&nbsp;Points</h5> &nbsp;&nbsp;<b></b><a href="'.$r["survey_url"].'?sid='.$sname.'" class="alert-link" >Click Here</a>.
+                            </div>
+
+                            ';
+
+                            }
+                            
                           }
 
 
-                      }
+                      
 
 
 
