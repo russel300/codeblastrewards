@@ -234,7 +234,7 @@ $result = mysql_query("INSERT into user_survey (uid, survey_id, points) values($
         {
 
         echo'
-        <div class="alert alert-success"><h5> '.$r["survey_name"].'- '.$r["points"].'&nbsp;Points</h5> &nbsp;&nbsp;<b></b><a href="#" class="alert-link" >Disabled(already Taken)</a>.
+        <div class="alert alert-success"><h5> '.$r["survey_name"].'- '.$r["points"].'&nbsp;Points</h5> &nbsp;&nbsp;<b>Completed</b> .
         </div>
 
         ';

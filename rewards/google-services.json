@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "281180960593",
+    "firebase_url": "https://codeblast-rewards.firebaseio.com",
+    "project_id": "codeblast-rewards",
+    "storage_bucket": "codeblast-rewards.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281180960593:android:8e2015c8b85030c2",
+        "android_client_info": {
+          "package_name": "com.codeblast.android.rewards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281180960593-i4ecdbkkserl0ifmae8mjah1p73viuo9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwo_zGdrTaGWjho5hEWr8iACyEdkseSpw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
