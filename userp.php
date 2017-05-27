@@ -1,4 +1,8 @@
-<?php include "includes/header.php" ?>
+<?php include "includes/header.php"; 
+      include "includes/config.php";
+
+
+?>
 <body>
 
     <div class="container">
@@ -99,18 +103,31 @@
                         <!-- /.panel-heading -->
                 <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <div class="alert alert-success">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Alert Link</a>.
+
+                           <?php
+                          
+                          db_connect();
+
+                          $res=mysql_query("select * from survey");
+
+                          while($r=mysql_fetch_array($res))
+                          {
+
+                            echo'
+
+                           <div class="alert alert-success">'.$r["survey_name"].' <a href="'.$r["survey_url"].'" class="alert-link">Click Here</a>.
                             </div>
-                            <div class="alert alert-info">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Alert Link</a>.
-                            </div>
-                            <div class="alert alert-warning">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Alert Link</a>.
-                            </div>
-                            <div class="alert alert-danger">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Alert Link</a>.
-                            </div>
+
+                            ';
+                          }
+
+
+
+                           ?>
+                            
+
+
+                            
                         </div>
                         <!-- .panel-body -->
                     </div>
