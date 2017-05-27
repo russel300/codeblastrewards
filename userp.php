@@ -1,7 +1,15 @@
 <?php include "includes/header.php"; 
       include "includes/config.php";
 
+      $uname=$_session["uname"];
 
+      if($uname="")
+      {
+
+  echo '<script>window.location.href = "userlogin.php";</script>';
+      }
+
+ $ps=view_pints(1);
 ?>
 <body>
 
@@ -23,7 +31,7 @@
                                 </div>
 
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">26</div>
+                                    <div class="huge"><?php echo $ps;  ?></div>
                                     <div>POINTS</div>
                                 </div>
 
@@ -92,7 +100,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="userlogin.php?lg=1">
                             <div class="panel-footer">
                                 <span class="pull-left">Logout</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>

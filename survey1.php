@@ -2,25 +2,32 @@
       include "includes/config.php";
     $sname=$_GET["sid"];
 
-    if($_POST)
+    if($_POST["submit"])
     {
+     db_connect();
 
-    $sub=submit_response(1,10,1);
-    if($sub==1)
-    {
+     $uid=1;
+     $survey_id=1;
+     $points=10;    
+     $result = mysql_query("INSERT into user_survey (uid, survey_id, points) values($uid,$survey_id,$points)");
 
-   $msg="sucessful";
-    echo $msg;
+    if ($result) 
+        {
+
+          echo '<script>window.location.href = "userp.php";</script>';
+
+        }
+        else
+        {
+
+         echo  "not sucess";
+
+        }
+
     }
     else
     {
-
-     $msg="not sucessful";
-      echo $msg;
-    }
-
-   
-
+    	
     }
 ?>
 <body>
@@ -57,18 +64,15 @@
 											<input type="radio" /> not at all<br />
 											
 											</p>
-										<p class="question-title" style="font-size: 12px; color: #424242; font-weight: bold; margin-top: 50px;">Considering your complete experience with our company, how likely would you be to recommend our company to a friend or colleague? (0 is not at all likely, 10 is extremely likely)</p>
+										<p class="question-title" style="font-size: 12px; color: #424242; font-weight: bold; margin-top: 50px;">How much do you spend per day</p>
 										<p class="question-choices" style="font-size: 12px; color: #424242; font-weight: bold;"><input type="radio" /> Not at All Likely (0)<br />
-											<input type="radio" /> (1)<br />
-											<input type="radio" /> (2)<br />
-											<input type="radio" /> (3)<br />
-											<input type="radio" /> (4)<br />
-											<input type="radio" /> (5)<br />
-											<input type="radio" /> (6)<br />
-											<input type="radio" /> (7)<br />
-											<input type="radio" /> (8)<br />
-											<input type="radio" /> (9)<br />
-											<input type="radio" /> Extremely Likely (10)</p>
+											<input type="radio" /> (200UGX)<br />
+											<input type="radio" /> (500UGX)<br />
+											<input type="radio" /> (700UGX)<br />
+											<input type="radio" /> (100UGX)<br />
+											<input type="radio" /> (200UGX)<br />
+											<input type="radio" /> (> 400UGX)<br />
+											</p>
 										<p class="question-title" style="font-size: 12px; color: #424242; font-weight: bold; margin-top: 50px;">Finally, please tell us a little about yourself&#8230;</p>
 										<p class="question-title" style="font-size: 12px; color: #424242; font-weight: bold; margin-top: 10px;">What is your gender?</p>
 										<p class="question-choices" style="font-size: 12px; color: #424242; font-weight: bold;"><input type="radio" /> Male<br />
@@ -82,26 +86,12 @@
 											<input type="radio" /> 55-64<br />
 											<input type="radio" /> 65 or over</p>
 										<p class="question-title" style="font-size: 12px; color: #424242; font-weight: bold; margin-top: 50px;">What is your current marital status?</p>
-										<p class="question-choices" style="font-size: 12px; color: #424242; font-weight: bold;"><input type="radio" /> Single, never married<br />
-											<input type="radio" /> Married without children<br />
-											<input type="radio" /> Married with children<br />
-											<input type="radio" /> Divorced<br />
-											<input type="radio" /> Separated<br />
-											<input type="radio" /> Widowed<br />
-											<input type="radio" /> Living with partner</p>
-										<p class="question-title" style="font-size: 12px; color: #424242; font-weight: bold; margin-top: 50px;">What is the highest level of education you have completed?</p>
-										<p class="question-choices" style="font-size: 12px; color: #424242; font-weight: bold;"><input type="radio" /> Less than High School<br />
-											<input type="radio" /> High School / GED<br />
-											<input type="radio" /> Some College<br />
-											<input type="radio" /> 2-year College Degree<br />
-											<input type="radio" /> 4-year College Degree Masters Degree<br />
-											<input type="radio" /> Doctoral Degree<br />
-											<input type="radio" /> Professional Degree (JD, MD)</p>
+									
 									</div>
 
 								</div>
 								<br>
-								<button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+								<input type="submit" name="submit" class="btn btn-primary btn-lg btn-block" value="Submit"  />
                             </p>
 							</form>
 						</div>

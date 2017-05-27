@@ -1,6 +1,17 @@
 <?php include "includes/header.php";
       include "includes/config.php" ;
 $errors="";
+
+if(isset($_GET["lg"]) )
+{
+$lg=$_GET["lg"];
+if($lg==1)
+{
+$_session["uname"]="";
+
+}
+
+}
 if($_POST)
 {
 

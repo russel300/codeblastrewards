@@ -125,8 +125,31 @@ $result = mysql_query("INSERT into user_survey (uid, survey_id, points) values($
 
     }
 
+ }
+
+
+ function  view_pints($uid)
+  {
+
+    // user survey display script
+
+   db_connect();
+
+    $result = mysql_query("SELECT * FROM user_survey  WHERE uid=$uid ;");
+    
+    $ps=0;
+    while($r=mysql_fetch_array($result))
+    {
+
+    $ps=$r["points"]+$ps;
+
+    }
+
+    return $ps;
 
  }
+
+
 
 
   
