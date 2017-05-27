@@ -21,11 +21,13 @@
  function  user_login($username, $password)
   {
 
+    $password=md5($password);
+
     // user login script
 
    db_connect();
 
-    $result = mysql_query("SELECT * FROM users  WHERE username=\"$username\" AND pwd= \"$password\";");
+    $result = mysql_query("SELECT * FROM user  WHERE email=\"$username\" AND pwd= \"$password\";");
 
 
 
@@ -86,7 +88,6 @@
     $snumber=mysql_num_rows($result);
     if($snumber >0)
     {
-
 
 
     }
