@@ -54,26 +54,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="col-lg-3 col-md-6">
-								<div class="panel panel-yellow">
-									<div class="panel-heading">
-										<div class="row">
-											<div class="col-xs-3">
-												<i class="fa fa-wrench fa-5x"></i>
-											</div>
-											<div class="col-xs-9 text-right">
-											</div>
-										</div>
-									</div>
-									<a href="#">
-										<div class="panel-footer">
-											<span class="pull-left">Edit Profile</span>
-											<span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-											<div class="clearfix"></div>
-										</div>
-									</a>
-								</div>
-							</div>
+						
 							<div class="col-lg-3 col-md-6">
 								<div class="panel panel-red">
 									<div class="panel-heading">
@@ -87,7 +68,7 @@
 									</div>
 									<a href="#">
 										<div class="panel-footer">
-											<span class="pull-left">Logout</span>
+											<span class="pull-left">Back </span>
 											<span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
 											<div class="clearfix"></div>
 										</div>
@@ -175,6 +156,9 @@
 									</div>
 
 								</div>
+								<br>
+								<button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+                            </p>
 							</form>
 						</div>
 						<!-- /.col-lg-3 (nested) -->
