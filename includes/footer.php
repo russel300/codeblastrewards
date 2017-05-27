@@ -1,19 +1,20 @@
-    <!-- /.content-wrapper -->
+    <!-- jQuery -->
+    <script src="./vendor/jquery/jquery.min.js"></script>
 
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fa fa-chevron-up"></i>
-    </a>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/tether/tether.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="./vendor/metisMenu/metisMenu.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/chart.js/Chart.min.js"></script>
-    <script src="vendor/datatables/jquery.dataTables.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Morris Charts JavaScript -->
+    <script src="./vendor/raphael/raphael.min.js"></script>
+    <script src="./vendor/morrisjs/morris.min.js"></script>
+    <script src="./data/morris-data.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/sb-admin.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="./dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>
