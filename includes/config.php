@@ -147,6 +147,28 @@ $result = mysql_query("INSERT into user_survey (uid, survey_id, points) values($
 
     return $ps;
 
+ } 
+
+ function logout()
+ {
+
+  //function to manage logout of users
+  session_destroy();
+ 
+
+ }
+
+ function getsession()
+ {
+  
+ if(isset($_SESSION['uname'])){
+    
+}else{
+    echo '<script>window.location.href = "userlogin.php";</script>';
+}
+
+ 
+
  }  
  
 ?>

@@ -1,6 +1,16 @@
 <?php include "includes/header.php";
       include "includes/config.php" ;
 $errors="";
+
+if(isset($_GET["lg"]))
+{
+if($_GET["lg"]==1)
+{
+logout();
+
+}
+
+}
 if($_POST)
 {
 
@@ -12,7 +22,7 @@ $login=user_login($email,$password);
 if($login>=1)
 {
 
-$_session["uname"]=$login;
+$_SESSION['uname']=$login;
 
 echo '<script>window.location.href = "userp.php";</script>';
 

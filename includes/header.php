@@ -1,9 +1,6 @@
 <?php 
-if(isset($_SESSION['uname'])){
-    session_start();
-}else{
-    header('location:userlogin.php');
-}
+session_start();
+
 
     ?>
 <!DOCTYPE html>

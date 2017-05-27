@@ -1,13 +1,7 @@
 <?php include "includes/header.php"; 
       include "includes/config.php";
 
-      $uname=$_session["uname"];
-
-      if($uname="")
-      {
-
-  echo '<script>window.location.href = "userlogin.php";</script>';
-      }
+    getsession(); 
 
  $ps=view_points(1);
 ?>
@@ -112,9 +106,7 @@
                     </div>
                 </div>
             </div>
-            <!-- /.row -->
-                        <!-- /.panel-heading -->
-                <!-- /.panel-heading -->
+
                         <div class="panel-body">
 
                            <?php
@@ -128,8 +120,7 @@
 
                             $sname=$r["survey_name"];
                             echo'
-
-                           <div class="alert alert-success"><h3>'.$r["points"].' &nbsp; ponts for &nbsp;'.$r["survey_name"].' </h3> &nbsp;&nbsp;<b></b><a href="'.$r["survey_url"].'?sid='.$sname.'" class="alert-link">Click Here</a>.
+                           <div class="alert alert-success"><h5> '.$r["survey_name"].'- '.$r["points"].'&nbsp;Points</h5> &nbsp;&nbsp;<b></b><a href="'.$r["survey_url"].'?sid='.$sname.'" class="alert-link">Click Here</a>.
                             </div>
 
                             ';
