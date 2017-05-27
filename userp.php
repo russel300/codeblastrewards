@@ -120,7 +120,7 @@
 
                             echo'
 
-                           <div class="alert alert-success">'.$r["survey_name"].' <a href="'.$r["survey_url"].'?sid='.$sname.'" class="alert-link">Click Here</a>.
+                           <div class="alert alert-success"><h3>'.$r["survey_name"].' </h3> &nbsp;&nbsp;<b>'.$r["points"].'</b><a href="'.$r["survey_url"].'?sid='.$sname.'" class="alert-link">Click Here</a>.
                             </div>
 
                             ';
