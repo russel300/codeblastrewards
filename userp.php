@@ -106,23 +106,39 @@
             </div>
 
                         <div class="panel-body">
-
+                        <h5>Available Surveys</h5>
+                          
                            <?php
                           
                           db_connect();
+
+                          
+
 
                           $res=mysql_query("select * from survey");
 
                           while($r=mysql_fetch_array($res))
                           {
 
+                            $surveyid=$r['survey_id'];
+                            $user=$_SESSION['uname'];
+
+                            $attmpt=mysql_query("SELECT  * FROM `user_survey` WHERE survey_id='$surveyid' and `uid`='$user'");
+
+
+                            $row_attmpt=mysql_fetch_array($attmpt);
+
+                                
                             $sname=$r["survey_name"];
                             echo'
-                           <div class="alert alert-success"><h5> '.$r["survey_name"].'- '.$r["points"].'&nbsp;Points</h5> &nbsp;&nbsp;<b></b><a href="'.$r["survey_url"].'?sid='.$sname.'" class="alert-link">Click Here</a>.
+                           <div class="alert alert-success"><h5> '.$r["survey_name"].'- '.$r["points"].'&nbsp;Points</h5> &nbsp;&nbsp;<b></b><a href="'.$r["survey_url"].'?sid='.$sname.'" class="alert-link"'.if(!is_null($row_attmpt)){.'  disabled'.}.' >Click Here</a>.
                             </div>
 
                             ';
                           }
+
+
+                      }
 
 
 
