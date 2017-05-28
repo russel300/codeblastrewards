@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.2"
 
     defaultConfig {
-        applicationId "com.brommko.android.universalwebview"
+        applicationId "com.codeblast.android.rewards"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 12
