@@ -13,7 +13,7 @@
     $sub=submit_response($uid,$pts,$ssid);
     if($sub==1)
     {
-   $msg="sucessful";
+   //$msg="sucessful";
    echo '<script>window.location.href = "userp.php";</script>';
    
     }
