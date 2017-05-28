@@ -1,16 +1,21 @@
 <?php include "includes/header.php"; 
       include "includes/config.php";
     
-    $sname=$_GET["sid"];
+    $sid=$_GET["sid"];
     $uid=$_SESSION['uname'];
-    if($_POST)
+    if($_POST["submit"])
     {
-    	
-    $sub=submit_response($uid,10,$sname);
+
+    $uid=$_SESSION['uname'];
+    $ssid=$_POST["ssid"];
+    $pts=get_points($ssid);
+    echo $pts;	
+    $sub=submit_response($uid,$pts,$ssid);
     if($sub==1)
     {
    $msg="sucessful";
-    echo $msg;
+   echo '<script>window.location.href = "userp.php";</script>';
+   
     }
     else
     {
@@ -48,6 +53,8 @@
 							<div class="col-lg-12">
 								<form role="form" method="POST">
 									<div class="form-group">
+
+									<input type="hidden" value="<?php echo $sid;   ?>" name="ssid"/>
 										<p class="question-title" style="font-size: 12px; color: #424242; font-weight: bold; margin-top: 50px;">How often do you buy airtime a day</p>
 										<p class="question-choices" style="font-size: 12px; color: #424242; font-weight: bold;">
 											<input type="radio" /> Once<br />
@@ -100,7 +107,7 @@
 
 								</div>
 								<br>
-								<button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+								<input type="submit" value="Submit" name="submit" class="btn btn-primary btn-lg btn-block" Submit /input>
                             </p>
 							</form>
 						</div>

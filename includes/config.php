@@ -147,6 +147,26 @@ function view_points($uid)
     
 }
 
+function get_points($sid)
+{
+    
+    // fetch survey point
+    
+    db_connect();
+    
+    $result = mysql_query("SELECT * FROM survey  WHERE survey_id=$sid ;");
+    
+    $ps = 0;
+    while ($r = mysql_fetch_array($result)) {
+        $ps =  $r["points"];
+        
+    }
+    
+    return $ps;
+    
+}
+
+
 
 
 
@@ -238,7 +258,7 @@ function available_surveys()
         }
         
         
-        $sname = $r["survey_name"];
+        $sname = $r["survey_id"];
         
         if ($num >= 1) {
             
