@@ -61,11 +61,11 @@ if ($dbhandle->connect_error) {
             "label" => $row[0]
           )
         );
-        /*array_push($dataseries1, array(
+        array_push($dataseries1, array(
           "value" => $row[1]
           )
         );
-
+        /*
         array_push($dataseries2, array(
           "value" => $row["value2"]
           )
