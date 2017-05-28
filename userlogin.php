@@ -24,7 +24,17 @@ if($login>=1)
 
 $_SESSION['uname']=$login;
 
+if($login==1)
+{
+echo '<script>window.location.href = "allsub.php";</script>';
+
+}
+else
+{
 echo '<script>window.location.href = "userp.php";</script>';
+
+}
+
 
 }
 else
