@@ -42,10 +42,11 @@ if ($dbhandle->connect_error) {
             "caption"=> "Survey rewards",
             "subCaption"=> "Points per survey",
             "xAxisname"=> "Survey",
-            "yAxisName"=> " points",
-            "numberSuffix"=> "$",
+            "yAxisName"=> "Points",
+            "numberSuffix"=> " Points",
             "legendItemFontColor"=> "#666666",
-            "theme"=> "zune"
+            "theme"=> "zune",
+            "exportEnabled"=>1
             )
           );
           // creating array for categories object
