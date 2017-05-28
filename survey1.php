@@ -1,9 +1,12 @@
 <?php include "includes/header.php"; 
       include "includes/config.php";
+    
     $sname=$_GET["sid"];
+    $uid=$_SESSION['uname'];
     if($_POST)
     {
-    $sub=submit_response(1,10,1);
+    	
+    $sub=submit_response($uid,10,$sname);
     if($sub==1)
     {
    $msg="sucessful";
