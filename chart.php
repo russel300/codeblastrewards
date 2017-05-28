@@ -42,8 +42,8 @@ if ($dbhandle->connect_error) {
             "caption"=> "Survey rewards",
             "subCaption"=> "Points per survey",
             "xAxisname"=> "Survey",
-            "yAxisName"=> "points",
-            "numberPrefix"=> "$",
+            "yAxisName"=> " points",
+            "numberSuffix"=> "$",
             "legendItemFontColor"=> "#666666",
             "theme"=> "zune"
             )
