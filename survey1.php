@@ -3,6 +3,7 @@
     
     $sid=$_GET["sid"];
     $uid=$_SESSION['uname'];
+   $ssname= get_sname($sid);
     if($_POST["submit"])
     {
 
@@ -34,7 +35,7 @@
 			<div class="col-md-6 col-md-offset-4">
 				<div class="login-panel panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">Welcome To <?php echo $sname;  ?> Survey</h3>
+						<h3 class="panel-title">Welcome To <?php echo $ssname;  ?> Survey</h3>
 					</div>
 					
 			</div>

@@ -165,6 +165,24 @@ function get_points($sid)
     return $ps;
     
 }
+function get_sname($sid)
+{
+    
+    // fetch survey point
+    
+    db_connect();
+    
+    $result = mysql_query("SELECT * FROM survey  WHERE survey_id=$sid ;");
+    
+    $ps = 0;
+    while ($r = mysql_fetch_array($result)) {
+        $ps =  $r["survey_name"];
+        
+    }
+    
+    return $ps;
+    
+}
 
 
 
