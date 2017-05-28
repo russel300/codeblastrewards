@@ -68,7 +68,7 @@
                             </table>
                             <!-- /.table-responsive -->
                             <div class="well">
-                                <a class="btn btn-default btn-lg btn-block" target="_blank" href="https://datatables.net/">Download Excel CSV</a>
+                                <a class="btn btn-default btn-lg btn-block" target="_blank" href="excel_download.php">Download Excel</a>
                             </div>
                         </div>
                         <!-- /.panel-body -->

@@ -3,7 +3,7 @@ ini_set('max_execution_time', 300);
 ini_set('memory_limit','200M');
 ini_set("display_errors", "on");
 $dbhost= "localhost"; //your MySQL Server 
-$dbuser = "mobile"; //your MySQL User Name 
+$dbuser = "root"; //your MySQL User Name 
 $dbpass = ""; //your MySQL Password 
 $dbname = "rewards_db"; 
 //your MySQL Database Name of which database to use this 
