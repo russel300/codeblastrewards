@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\wamp\\www\\rewards\\codeblastrewards\\rewards\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_refresh_white_24px.png",
+        "source": "C:\\wamp\\www\\rewards\\codeblastrewards\\rewards\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_refresh_white_24px.png"
+    },
+    {
+        "merged": "C:\\Users\\RUSSEL\\Desktop\\rewards\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_refresh_white_24px.png",
+        "source": "C:\\Users\\RUSSEL\\Desktop\\rewards\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_refresh_white_24px.png"
+    },
+    {
+        "merged": "C:\\wamp\\www\\rewards\\codeblastrewards\\rewards\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_not_interested_white_24px.png",
+        "source": "C:\\wamp\\www\\rewards\\codeblastrewards\\rewards\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_not_interested_white_24px.png"
+    },
+    {
+        "merged": "C:\\Users\\RUSSEL\\Desktop\\rewards\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_chevron_right_white_24px.png",
+        "source": "C:\\Users\\RUSSEL\\Desktop\\rewards\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_chevron_right_white_24px.png"
+    },
+    {
+        "merged": "C:\\Users\\RUSSEL\\Desktop\\rewards\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_not_interested_white_24px.png",
+        "source": "C:\\Users\\RUSSEL\\Desktop\\rewards\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_not_interested_white_24px.png"
+    },
+    {
+        "merged": "C:\\wamp\\www\\rewards\\codeblastrewards\\rewards\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_chevron_right_white_24px.png",
+        "source": "C:\\wamp\\www\\rewards\\codeblastrewards\\rewards\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_chevron_right_white_24px.png"
+    },
+    {
+        "merged": "C:\\wamp\\www\\rewards\\codeblastrewards\\rewards\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\splash.png",
+        "source": "C:\\wamp\\www\\rewards\\codeblastrewards\\rewards\\app\\src\\main\\res\\drawable-hdpi\\splash.png"
+    },
+    {
+        "merged": "C:\\wamp\\www\\rewards\\codeblastrewards\\rewards\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_chevron_left_white_24px.png",
+        "source": "C:\\wamp\\www\\rewards\\codeblastrewards\\rewards\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_chevron_left_white_24px.png"
+    },
+    {
+        "merged": "C:\\Users\\RUSSEL\\Desktop\\rewards\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_chevron_left_white_24px.png",
+        "source": "C:\\Users\\RUSSEL\\Desktop\\rewards\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_chevron_left_white_24px.png"
+    },
+    {
+        "merged": "C:\\Users\\RUSSEL\\Desktop\\rewards\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\splash.png",
+        "source": "C:\\Users\\RUSSEL\\Desktop\\rewards\\app\\src\\main\\res\\drawable-hdpi\\splash.png"
+    }
+]

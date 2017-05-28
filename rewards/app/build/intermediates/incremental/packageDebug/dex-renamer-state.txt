@@ -1,0 +1,7 @@
+#Sun May 28 12:23:08 EAT 2017
+base.0=C\:\\wamp\\www\\rewards\\codeblastrewards\\rewards\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_75f5737c667e8968cd8598fff1f9fd19942fae8b
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\wamp\\www\\rewards\\codeblastrewards\\rewards\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_5ae7dfa4b40b7767829e33ff55b905b540942eea\\classes.dex
+base.1=C\:\\wamp\\www\\rewards\\codeblastrewards\\rewards\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_5ae7dfa4b40b7767829e33ff55b905b540942eea
+file.0=C\:\\wamp\\www\\rewards\\codeblastrewards\\rewards\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_75f5737c667e8968cd8598fff1f9fd19942fae8b\\classes.dex

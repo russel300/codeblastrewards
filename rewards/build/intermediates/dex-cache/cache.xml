@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\wamp\www\rewards\codeblastrewards\rewards\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a77f34ceb1a2936f5d0ebbb9bcc892abda929ab1">
+        <dex dex="C:\wamp\www\rewards\codeblastrewards\rewards\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_5ae7dfa4b40b7767829e33ff55b905b540942eea\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\RUSSEL\.android\build-cache\0d3f5dbd9157ff386d2b1d85fd9bc1003a448742\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fc006a0e3cffa83bbf4d8157cda67bc4ce3e9ca4">
+        <dex dex="C:\wamp\www\rewards\codeblastrewards\rewards\app\build\intermediates\pre-dexed\debug\classes_34af7846b5c27d9230d5d410c07d236239d13b1a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\RUSSEL\Desktop\rewards\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="C:\Users\RUSSEL\Desktop\rewards\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_add385963a7d8702cc03a04c68004fbc5c3f3490\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\RUSSEL\Desktop\rewards\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="35dde9b66c209b1739f185f9b4859477b0b646f0">
+        <dex dex="C:\Users\RUSSEL\Desktop\rewards\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_9895cc4a9c705bb04eea560a0c05bdccf8802ffb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\wamp\www\rewards\codeblastrewards\rewards\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="C:\wamp\www\rewards\codeblastrewards\rewards\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_75f5737c667e8968cd8598fff1f9fd19942fae8b\classes.dex" />
+    </item>
+
+</items>
