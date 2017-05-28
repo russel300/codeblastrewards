@@ -1,7 +1,7 @@
 <?php include "includes/header.php"; 
       include "includes/config.php";
     getsession(); 
- $ps=view_points(1);
+ $ps=view_points($_SESSION['uname']);
  $nums=num_surveys();
 ?>
 <body>

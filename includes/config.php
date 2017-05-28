@@ -5,7 +5,7 @@
  * 
  */
  
-	function  db_connect()
+function  db_connect()
   {
 
  $con = mysql_connect("localhost", "root", "");  
@@ -18,7 +18,11 @@
 
  }
 
- function  user_login($username, $password)
+
+
+
+
+function  user_login($username, $password)
   {
 
     $password=md5($password);
@@ -33,7 +37,10 @@
 
     if (mysql_num_rows($result) > 0) 
         {   
-          return 1;
+          while ($row=mysql_fetch_array($result)) {
+            return $row['uid'];
+          }
+          
 
         }
         else
@@ -43,9 +50,11 @@
 
   
 
- }
+   }
 
-  function  user_add($full_names, $username, $email, $phone_number, $p_id, $pwd)
+
+
+function  user_add($full_names, $username, $email, $phone_number, $p_id, $pwd)
   {
 
    // a method to add users to the database reward_db
@@ -71,13 +80,16 @@
 
  }
 
- function  submit_response($uid, $points, $survey_id)
+
+
+
+function  submit_response($uid, $points, $survey_id)
   {
 
    // a method to add users to the database reward_db
    db_connect();
 
-$result = mysql_query("INSERT into user_survey (uid, survey_id, points) values($uid,$survey_id, $points)");
+    $result = mysql_query("INSERT into user_survey (uid, survey_id, points) values($uid,$survey_id, $points)");
 
 
 
@@ -97,7 +109,8 @@ $result = mysql_query("INSERT into user_survey (uid, survey_id, points) values($
  }
 
 
- function  view_usersurveys($uid)
+
+function  view_usersurveys($uid)
   {
 
     // user survey display script
@@ -123,7 +136,10 @@ $result = mysql_query("INSERT into user_survey (uid, survey_id, points) values($
  }
 
 
- function  view_points($uid)
+
+
+
+function  view_points($uid)
   {
 
     // user survey display script
@@ -143,7 +159,11 @@ $result = mysql_query("INSERT into user_survey (uid, survey_id, points) values($
 
  } 
 
- function logout()
+
+
+
+
+function logout()
  {
 
   //function to manage logout of users
@@ -152,7 +172,10 @@ $result = mysql_query("INSERT into user_survey (uid, survey_id, points) values($
 
  }
 
- function getsession()
+
+
+
+function getsession()
  {
 
  if(isset($_SESSION['uname'])){
@@ -164,7 +187,11 @@ $result = mysql_query("INSERT into user_survey (uid, survey_id, points) values($
  
 
  } 
- function num_surveys()
+
+
+
+
+function num_surveys()
  {
        
        db_connect();
@@ -206,7 +233,9 @@ $result = mysql_query("INSERT into user_survey (uid, survey_id, points) values($
  }
 
 
- function available_surveys()
+
+
+function available_surveys()
  {
        db_connect();
 
@@ -234,7 +263,7 @@ $result = mysql_query("INSERT into user_survey (uid, survey_id, points) values($
         {
 
         echo'
-        <div class="alert alert-success"><h5> '.$r["survey_name"].'- '.$r["points"].'&nbsp;Points</h5> &nbsp;&nbsp;<b>Completed</b> .
+        <div class="alert alert-success"><h5> '.$r["survey_name"].' - '.$r["points"].'&nbsp;Points</h5> &nbsp;&nbsp;<b>Completed</b> .
         </div>
 
         ';
