@@ -1,13 +1,20 @@
 <?php include "includes/header.php"; 
       include "includes/config.php";
     $sname=$_GET["sid"];
+     $s=$_GET["s"];
     if($_POST)
     {
-    $sub=submit_response(1,10,1);
+
+    $s=0;
+    $ss=$_POST["ss"];
+
+    $pt=get_spoints($ss);
+
+    $sub=submit_response(1,$pt,$ss);
     if($sub==1)
     {
    $msg="sucessful";
-    echo $msg;
+    echo '<script>window.location.href = "userp.php";</script>';
     }
     else
     {
@@ -44,6 +51,8 @@
 						<div class="row">
 							<div class="col-lg-12">
 								<form role="form" method="POST">
+
+								<input type="hidden" name="ss" value="<?php echo $s  ?>"
 									<div class="form-group">
 										<p class="question-title" style="font-size: 12px; color: #424242; font-weight: bold; margin-top: 50px;">How often do you buy airtime a day</p>
 										<p class="question-choices" style="font-size: 12px; color: #424242; font-weight: bold;">

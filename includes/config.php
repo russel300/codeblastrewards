@@ -163,7 +163,27 @@ $result = mysql_query("INSERT into user_survey (uid, survey_id, points) values($
 
  
 
- } 
+ }
+
+  function  get_spoints($sid)
+  {
+
+    // user survey display script
+
+   db_connect();
+
+    $result = mysql_query("SELECT * FROM survey  WHERE survey_id=$sid ;");
+
+    $pt=0;
+    while($r=mysql_fetch_array($result))
+    {
+  $pt=$r["points"];
+
+    }
+
+    return $pt;
+
+ }  
  function num_surveys()
  {
        
@@ -229,6 +249,7 @@ $result = mysql_query("INSERT into user_survey (uid, survey_id, points) values($
 
 
         $sname=$r["survey_name"];
+         $s=$r["survey_id"];
 
         if($num >=1)
         {
@@ -244,7 +265,7 @@ $result = mysql_query("INSERT into user_survey (uid, survey_id, points) values($
         {
 
         echo'
-        <div class="alert alert-success"><h5> '.$r["survey_name"].'- '.$r["points"].'&nbsp;Points</h5> &nbsp;&nbsp;<b></b><a href="'.$r["survey_url"].'?sid='.$sname.'" class="alert-link" >Click Here</a>.
+        <div class="alert alert-success"><h5> '.$r["survey_name"].'- '.$r["points"].'&nbsp;Points</h5> &nbsp;&nbsp;<b></b><a href="'.$r["survey_url"].'?sid='.$sname.'&s='.$s.'" class="alert-link" >Click Here</a>.
         </div>
 
         ';
