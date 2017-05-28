@@ -33,7 +33,7 @@ if ($dbhandle->connect_error) {
 
         <?php
 
-  $strQuery = "SELECT `survey`.`survey_name` , `user_survey`.`points` FROM `user_survey`,`user`,`survey`,`business_partner` where `survey`.`survey_id`=`user_survey`.`survey_id`  ";
+  $strQuery = "SELECT DISTINCT `survey`.`survey_name` , `user_survey`.`points` FROM `user_survey`,`user`,`survey`,`business_partner` where `survey`.`survey_id`=`user_survey`.`survey_id`  ";
   $result = $dbhandle->query($strQuery) or exit("Error code ({$dbhandle->errno}): {$dbhandle->error}");
   if ($result) {
 
